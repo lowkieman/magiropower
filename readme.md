@@ -1,5 +1,5 @@
 # magiro power
-[here](https://magiropower.netlify.app/)
+[here](https://magiropower.vercel.app/)
 
 ## stacks
 - html5
