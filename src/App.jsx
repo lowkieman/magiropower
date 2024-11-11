@@ -11,8 +11,6 @@ import Media from './pages/Media'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
-  //showing navigation bar
-
   return (
     <>
         <NavBar/>

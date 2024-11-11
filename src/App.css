@@ -2,168 +2,55 @@
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  margin: 0 auto;
-  padding: 5px;
-  width: 100%;
-  min-height: 12vh;
+.navbar {
   position: fixed;
   top: 0;
-  box-shadow: 2px 0 10px gray;
-  background-color: white;
-}
-
-@media screen and (min-width: 769px) {
-  header {
-    margin: 0 auto;
-    padding: 5px;
-    width: 100%;
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-  }
-}
-/*logo*/
-.header {
-  margin: 0;
-  padding: 0;
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: white;
 }
-
-@media screen and (min-width: 769px) {
-  .header {
-    margin: 0 auto;
-    padding: 0 0 0 150px;
-    width: 40%;
-    height: 100%;
-    background-color: white;
-  }
+.navbar .navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header .bi-list {
+.navbar .navbar-header .bi-list {
   font-size: 32px;
   padding: 10px;
   font-weight: bold;
   cursor: pointer;
+  display: none;
 }
-
-@media screen and (min-width: 769px) {
-  .header .bi-list {
-    display: none;
-  }
-}
-.header .bi-list:hover {
+.navbar .navbar-header .bi-list:hover {
   color: rgb(13, 170, 13);
 }
-
-.header a {
+.navbar .navbar-header a {
   text-decoration: none;
-  padding: 0;
-  margin: 0;
 }
-
-.header a img {
-  margin: 0 auto;
-  padding: 0;
-  height: 100%;
-  background-color: white;
-  cursor: pointer;
-}
-
-/*navigation*/
-.nav {
-  margin: 0;
-  width: 50%;
-  height: 100%;
-  position: fixed;
-  left: -60%;
-  top: 12vh;
-  background-color: black;
-  transition-duration: 1s;
-}
-
-@media screen and (min-width: 769px) {
-  .nav {
-    margin: 0 auto;
-    width: 60%;
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: white;
-    transition-duration: 0;
-  }
-}
-.nav .bi-x {
-  font-size: 29px;
-  font-weight: bold;
-  position: absolute;
-  right: -29px;
-  top: 30%;
-  border-radius: 0 50% 50% 0;
-  background-color: rgb(13, 170, 13);
-  cursor: pointer;
+.navbar .navbar-header a img {
+  margin-left: 20px;
   color: white;
+  cursor: pointer;
 }
-
-@media screen and (min-width: 769px) {
-  .nav .bi-x {
-    display: none;
-  }
-}
-.nav .bi-x:hover {
-  background-image: linear-gradient(45deg, green, blue, white);
-}
-
-.nav ul {
-  margin: 0;
-  padding: 0;
+.navbar .navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style-type: none;
-  width: 100%;
 }
-
-@media screen and (min-width: 769px) {
-  .nav ul {
-    margin: 0;
-    padding: 10px;
-    list-style-type: none;
-    width: 100%;
-    display: flex;
-  }
-}
-.nav ul li {
-  margin: 0 auto;
-  display: block;
-  padding: 10px;
+.navbar .navbar-list a {
   text-decoration: none;
-  font-size: 20px;
-  cursor: pointer;
+  padding: 10px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 22px;
+}
+.navbar .navbar-list a:hover {
+  color: lime;
 }
 
-@media screen and (min-width: 769px) {
-  .nav ul li {
-    color: black;
-    text-transform: uppercase;
-  }
-}
-.nav ul li:hover {
-  background-color: rgb(13, 170, 13);
-  color: white;
-}
-
-@media screen and (min-width: 769px) {
-  .nav ul li:hover {
-    background-color: inherit;
-    color: rgb(13, 170, 13);
-  }
-}
 /*main*/
 .home {
   background-color: lime;
@@ -190,7 +77,8 @@ header {
 }
 
 footer {
-  background-color: red;
+  bottom: 0;
+  width: 100%;
 }
 footer img {
   background-color: lime;
