@@ -10,7 +10,7 @@ html, body {
 header {
   margin: 0 auto;
   padding: 5px;
-  max-width: 100%;
+  width: 100%;
   min-height: 12vh;
   position: fixed;
   top: 0;
@@ -51,6 +51,7 @@ header {
   font-size: 32px;
   padding: 10px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 769px) {
@@ -73,6 +74,7 @@ header {
   padding: 0;
   height: 100%;
   background-color: white;
+  cursor: pointer;
 }
 
 /*navigation*/
@@ -107,6 +109,7 @@ header {
   top: 30%;
   border-radius: 0 50% 50% 0;
   background-color: rgb(13, 170, 13);
+  cursor: pointer;
   color: white;
 }
 
@@ -141,6 +144,7 @@ header {
   padding: 10px;
   text-decoration: none;
   font-size: 20px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 769px) {
@@ -161,14 +165,33 @@ header {
   }
 }
 /*main*/
-main {
-  margin: 12vh auto;
+.home {
+  background-color: lime;
 }
 
-main img {
-  width: 100%;
+.about {
+  background-color: purple;
 }
 
+.power {
+  background-color: green;
+}
+
+.partners {
+  background-color: aqua;
+}
+
+.services {
+  background-color: gold;
+}
+
+.blog {
+  background-color: orange;
+}
+
+footer {
+  background-color: red;
+}
 footer img {
   background-color: lime;
   color: black;

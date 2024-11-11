@@ -53,6 +53,7 @@
     font-size: 32px;
     padding: 10px;
     font-weight: bold;
+    cursor: pointer;
   }
   
   @media screen and (min-width:769px) {
@@ -80,6 +81,7 @@
     padding: 0;
     height: 100%;
     background-color: white;
+    cursor: pointer;
   }
   
   /*navigation*/
@@ -115,6 +117,7 @@
     top: 30%;
     border-radius: 0 50% 50% 0;
     background-color: rgb(13, 170, 13);
+    cursor: pointer;
     color: white;
   }
   
@@ -154,6 +157,7 @@
     padding: 10px;
     text-decoration: none;
     font-size: 20px;
+    cursor: pointer;
   }
   @media screen and (min-width:769px) {
     .nav ul li{
@@ -174,14 +178,35 @@
     }
   }
   /*main*/
-  main{
-    margin: 12vh auto;
-  }
-  main img{
-    width: 100%;
-  }
-  
-  footer img{
-    background-color: lime;
-    color: black;
-  }
+.home{
+  background-color: lime;
+}
+
+.about{
+  background-color: purple;
+}
+
+.power{
+  background-color: green;
+}
+
+.partners{
+  background-color: aqua;
+}
+
+.services{
+  background-color: gold;
+}
+
+.blog{
+  background-color: orange;
+}
+
+footer{
+    background-color: red;
+
+    img{
+      background-color: lime;
+      color: black;
+    }
+  } 
